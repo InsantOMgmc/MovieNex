@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #121119;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #FFF;
+}
+
+.film-details__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px;
+    max-width: 900px;
+}
+
+.film-details__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.film-details__img {
+    border-bottom: 3px solid #CCFF00;
+    border-top: 3px solid #CCFF00;
+}
+
+.film-details__info-blog {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.film-details__title {
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.film-details__rating {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.film-details__rating svg {
+    width: 25px;
+    height: 25px;
+}
+
+.film-details__about {
+    display: flex;
+    align-self: center;
+    gap: 50px;
+}
+
+.film-details__length {
+    color: rgb(155, 155, 155);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.film-details__length svg {
+    width: 20px;
+    height: 20px;
+}
+
+.film-details__year {
+    color: #CCFF00;
+    font-size: 20px;
+}
+
+.film-details__type {
+    color: rgb(155, 155, 155);
+    font-size: 18px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.film-details__type path {
+    fill: #CCFF00;
+}
+
+.film-details__type rect {
+    stroke: #CCFF00;
+}
+
+.film-details__genres {
+    display: flex;
+    gap: 40px;
+}
+
+.film-details__genre {
+    padding: 10px 45px;
+    border: 1px solid #FFF;
+    border-radius: 8px;
+    font-weight: 600;
+
+}
+
+.film-details__other-info-blog {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.film-details__other-info-blog h4 {
+    font-size: 22px;
+}
+
+.film-details__other-info {
+    max-width: 100%;
+    color: rgb(155, 155, 155);
+}
+
+.film-actions {
+    display: flex;
+}
+
+.film-actions__favorites {
+    background-color: transparent;
+    border: transparent;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.film-actions__icon {
+    width: 50px;
+    height: 50px;
+}
+
+.film-actions__icon:hover {
+    opacity: .5;
+    transition: all .4s ease;
+}
+
+.film-actions__tooltip {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity .3s ease;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.film-actions__favorites:hover .film-actions__tooltip {
+    opacity: 1;
+}
